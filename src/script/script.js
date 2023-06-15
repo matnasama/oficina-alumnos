@@ -4,14 +4,14 @@ const containerTramites = document.getElementById('container-tramites');
 const modal = document.getElementById('ventana-modal');
 const modalForm = document.getElementById('ventana-form');
 // const totalCarrito = document.getElementById('total');
-const btnClose = document.getElementsByClassName('close')[0];
-const btnCloseForm = document.getElementsByClassName('close-form')[0];
+// const btnClose = document.getElementsByClassName('close')[0];
+// const btnCloseForm = document.getElementsByClassName('close-form')[0];
 // const containerCart = document.querySelector('.modal-body');
 const iconMenu = document.getElementById('icon-menu');
 const myForm = document.getElementById('myForm');
 const myNav = document.getElementById('myTopnav');
-const btnFinalizar = document.querySelector('#finalizar-compra');
-const btnVaciar = document.querySelector('#vaciar-carrito');
+// const btnFinalizar = document.querySelector('#finalizar-compra');
+// const btnVaciar = document.querySelector('#vaciar-carrito');
 // const cantidadProductos = document.querySelector('.contador-productos');
 // const contenedorProductos = document.querySelector('.contenedor-carrito');
 
@@ -50,13 +50,13 @@ function cargarEventos() {
         cargarTramiteLocalStorage();
     });
 
-    containerTramites.addEventListener('click', agregarTramite);
-    btnFinalizar.addEventListener('click', finalizarTramite);
+    // containerTramites.addEventListener('click', agregarTramite);
+    // btnFinalizar.addEventListener('click', finalizarTramite);
 
-    btnClose.onclick = function () {
+/*     btnClose.onclick = function () {
         modal.style.display = 'none';
 
-    };
+    }; */
 
     window.onclick = function (event) {
         if (event.target == modal || event.target == modalForm) {
@@ -88,7 +88,7 @@ function alertTramite(icono, titulo, colorFondo) {
     });
 }
 
-function leerDatosTramite(tramite) {
+/* function leerDatosTramite(tramite) {
    
     const datosTramite = new Tramite(
         tramite.querySelector('img').src,
@@ -96,7 +96,9 @@ function leerDatosTramite(tramite) {
         Number(tramite.querySelector('p').textContent.replace('$', '')),
         parseInt(tramite.querySelector('a').getAttribute('id'))
     );
-}
+
+    datosTramite
+} */
 
 /* function agregarAlCarrito(productoAgregar) {
     const existeEnCarrito = tramitesAlumnos.some((producto) => producto.id === tramitesAgregar.id);
@@ -167,7 +169,7 @@ async function realizarPeticion(datos) {
     } 
 }
 
-async function renderizarProductos() {
+async function renderizarTramites() {
     // const tramites = await realizarPeticion(url);
     const tramites = await realizarPeticion(file);
     recorrerArray(tramites);
@@ -178,7 +180,7 @@ function recorrerArray(arregloTramites) {
         const divCard = document.createElement('div');
         divCard.classList.add('card');
         divCard.innerHTML += `
-			<img src="./img/${tramite.img}" alt="${producto.nombre}" />
+			<img src="./img/${tramite.img}" alt="${tramite.nombre}" />
 			<h4>${tramite.nombre}</h4>
 			<p>$${tramite.descripcion}</p>
             <p>$${tramite.url}</p>

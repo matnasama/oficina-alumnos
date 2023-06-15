@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/matnasama/oficina-alumnos#readme",
   "dependencies": {
+    "bootstrap": "^5.3.0",
     "luxon": "^3.3.0",
     "sweetalert2": "^11.7.12"
   }

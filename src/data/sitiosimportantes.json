@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"nombre": "Gestión Online",
+		"descripcion": 10000,
+		"img": "guarani.jpg",
+        "url": "url"
+	},
+	{
+		"id": 2,
+		"nombre": "Bedelía",
+		"descripcion": 8500,
+		"img": "bedelia.jpg",
+        "url": "url"
+	},
+	{
+		"id": 3,
+		"nombre": "Bienestar Universitario",
+		"descripcion": 8400,
+		"img": "bienestar.jpg",
+        "url": "url"
+	},
+	{
+		"id": 4,
+		"nombre": "Calendario Académico",
+		"descripcion": 9130,
+		"img": "calendario.jpg",
+        "url": "url"
+	},
+	{
+		"id": 5,
+		"nombre": "Laboratorios de Informática",
+		"descripcion": 9190,
+		"img": "labinfo.jpg",
+        "url": "url"
+	},
+	{
+		"id": 6,
+		"nombre": "Mesas de Examen",
+		"descripcion": 7490,
+		"img": "mesaexamen.jpg",
+        "url": "url"
+	}
+]

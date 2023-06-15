@@ -1,44 +1,44 @@
 [
 	{
 		"id": 1,
-		"nombre": "Torta Pelota",
+		"nombre": "Cambio o Simultaneidad de Carreras",
 		"descripcion": 10000,
-		"img": "torta-pelota-1.jpg",
         "url": "url"
 	},
 	{
 		"id": 2,
-		"nombre": "Torta Spiderman",
+		"nombre": "Cambio de Institución",
 		"descripcion": 8500,
-		"img": "torta-spiderman-1.jpg",
         "url": "url"
 	},
 	{
 		"id": 3,
-		"nombre": "Torta Rueda",
+		"nombre": "Certificado de Examen",
 		"descripcion": 8400,
-		"img": "torta-rueda.jpg",
         "url": "url"
 	},
 	{
 		"id": 4,
-		"nombre": "Torta Rogel",
+		"nombre": "Modificación de Datos Personales",
 		"descripcion": 9130,
-		"img": "torta-rogel-1.jpg",
         "url": "url"
 	},
 	{
 		"id": 5,
-		"nombre": "Torta Cupcake",
+		"nombre": "Certificado de Alumno Regular",
 		"descripcion": 9190,
-		"img": "torta-cupcake-1.jpg",
         "url": "url"
 	},
 	{
 		"id": 6,
-		"nombre": "Torta Unicornio",
+		"nombre": "Solicitud de Títulos",
+		"descripcion": 9190,
+        "url": "url"
+	},
+	{
+		"id": 7,
+		"nombre": "Solicitud de Equivalencias",
 		"descripcion": 7490,
-		"img": "torta-unicornio.jpg",
         "url": "url"
 	}
 ]

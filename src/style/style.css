@@ -27,7 +27,7 @@ main {
 
 .banner {
     
-    background-image:url(/img/cakesdiamond.jpg);
+    background-image:url(../img/cakesdiamond.jpg);
     background-size: 300px;
     height: 250px;
     background-attachment: fixed;

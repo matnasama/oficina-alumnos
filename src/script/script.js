@@ -3,17 +3,10 @@ const file ='../data/tramites.json';
 const containerTramites = document.getElementById('container-tramites');
 const modal = document.getElementById('ventana-modal');
 const modalForm = document.getElementById('ventana-form');
-// const totalCarrito = document.getElementById('total');
-// const btnClose = document.getElementsByClassName('close')[0];
-// const btnCloseForm = document.getElementsByClassName('close-form')[0];
-// const containerCart = document.querySelector('.modal-body');
+
 const iconMenu = document.getElementById('icon-menu');
 const myForm = document.getElementById('myForm');
 const myNav = document.getElementById('myTopnav');
-// const btnFinalizar = document.querySelector('#finalizar-compra');
-// const btnVaciar = document.querySelector('#vaciar-carrito');
-// const cantidadProductos = document.querySelector('.contador-productos');
-// const contenedorProductos = document.querySelector('.contenedor-carrito');
 
 
 let tramitesAlumnos = [];
@@ -66,13 +59,13 @@ function cargarEventos() {
         }
     };
 
-    myForm.onclick = function () {
+/*     myForm.onclick = function () {
         modalForm.style.display = 'block';
-    };
+    }; */
     
-    btnCloseForm.onclick = function () {
+/*     btnCloseForm.onclick = function () {
         modalForm.style.display = 'none';
-    };
+    }; */
 
 }
 function cargarTramiteLocalStorage() {
@@ -196,7 +189,7 @@ function mostrarMenu() {
     navbar.className = navbar.className === 'topnav' ? (navbar.className += ' responsive') : (navbar.className = 'topnav');
 }
 
-const inputFiltar = document.querySelector('#myInput');
+/* const inputFiltar = document.querySelector('#myInput');
 const btnFiltro = document.querySelector('#filtro');
 
 btnFiltro.addEventListener('click', myFunction);
@@ -221,7 +214,7 @@ async function myFunction() {
         limpiarContenedorTramites();
         recorrerArray(tramites);
     }
-}
+} */
 
 function limpiarContenedorTramites() {
     while (containerTramites.firstChild) {

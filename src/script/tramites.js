@@ -1,5 +1,5 @@
 // const url ='https://raw.githubusercontent.com/matnasama/proyecto-coderhouse/main/data/productos.json';
-const tramitesListado ='../src/data/tramites.json';
+const listadoTramites ='../src/data/tramites.json';
 const containerTramites = document.getElementById('container-tramites');
 const sitiosImp ='../src/data/sitiosimportantes.json';
 const containerSitios = document.getElementById('container-sitios');
@@ -53,14 +53,14 @@ async function realizarPeticion(datos) {
 
 async function renderizarTramites() {
     // const tramites = await realizarPeticion(url);
-    const tramites = await realizarPeticion(tramitesListado);
-    recorrerArray(tramites);
+    const tramites = await realizarPeticion(listadoTramites);
+    recorrerArrayTramites(tramites);
 }
 
-function recorrerArray(arregloTramites) {
+function recorrerArrayTramites(arregloTramites) {
     arregloTramites.forEach((tramite) => {
         const divCardTramites = document.createElement('div');
-        divCardTramites.classList.add('card');
+        divCardTramites.classList.add('card', 'row');
         divCardTramites.innerHTML += `
         <h4>${tramite.nombre}</h4>
         <p>$${tramite.descripcion}</p>
@@ -127,10 +127,10 @@ async function realizarPeticion(datos) {
 async function renderizarSitiosImportantes() {
     // const tramites = await realizarPeticion(url);
     const sitios = await realizarPeticion(sitiosImp);
-    recorrerArray(sitios);
+    recorrerArraySitios(sitios);
 }
 
-function recorrerArray(arregloSitios) {
+function recorrerArraySitios(arregloSitios) {
     arregloSitios.forEach((sitio) => {
         const divCardSitios = document.createElement('div');
         divCardSitios.classList.add('card-sitios');

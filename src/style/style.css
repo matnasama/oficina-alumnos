@@ -42,6 +42,7 @@ h1 {
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    background-color: #6c6791;
 }
 
 .container .card:hover {

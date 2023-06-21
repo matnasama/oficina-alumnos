@@ -2,43 +2,43 @@
 	{
 		"id": 1,
 		"nombre": "Cambio o Simultaneidad de Carreras",
-		"descripcion": 10000,
-        "url": "url"
+		"descripcion": "A través del formulario que encontrará al final de la página podrá realizar la solicitud de CAMBIO o SIMULTANEIDAD DE CARRERA.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163397"
 	},
 	{
 		"id": 2,
 		"nombre": "Cambio de Institución",
-		"descripcion": 8500,
-        "url": "url"
+		"descripcion": "A través del formulario que encontrará al final de la página usted podrá solicitar la documentación para solicitar equivalencias en otra institución. Dicha solicitud no afecta a su regularidad en la institución.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163398"
 	},
 	{
 		"id": 3,
 		"nombre": "Certificado de Examen",
-		"descripcion": 8400,
-        "url": "url"
+		"descripcion": "A través de los formularios que encontrará al final de la página usted podrá solicitar Certificados de Examen ingresando sus datos en el formulario correspondiente a su Departamento de Carrera.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163401"
 	},
 	{
 		"id": 4,
 		"nombre": "Modificación de Datos Personales",
-		"descripcion": 9130,
-        "url": "url"
+		"descripcion": "Si desea solicitar Modificación de Datos en el sistema deberá completar el formulario que encontrará subido en este espacio.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163403"
 	},
 	{
 		"id": 5,
 		"nombre": "Certificado de Alumno Regular",
-		"descripcion": 9190,
-        "url": "url"
+		"descripcion": "A través del formulario que encontrará al final de la página podrás solicitar Certificados de Alumno Regular y/o Certificado de Asignaturas Rendidas.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163408"
 	},
 	{
 		"id": 6,
 		"nombre": "Solicitud de Títulos",
-		"descripcion": 9190,
-        "url": "url"
+		"descripcion": "A través del mismo estarás solicitando la documentación de verificación de cumplimiento de requisitos de ingreso, que se requiere para presentar al Departamento de Títulos.",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163404"
 	},
 	{
 		"id": 7,
 		"nombre": "Solicitud de Equivalencias",
-		"descripcion": 7490,
-        "url": "url"
+		"descripcion": "En este espacio podrás encontrar toda la información necesaria para realizar trámites de equivalencias",
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/folder/view.php?id=163402"
 	}
 ]

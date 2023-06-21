@@ -16,12 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
 
 </head>
-<body>        
+<body id="page-site-index">        
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
-            <img src="/src/img/logo.png" alt="Bootstrap" width="43" height="50">
+            <img src="/src/img/logo.png" alt="logo" width="43" height="50">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -54,17 +54,15 @@
           </div>
         </div>
       </nav>
-    <main>
-        <p class="titulo">
-            DEPARTAMENTO DE ALUMNOS
-        </p>
-        
-        <div class="tramites container">
+
+    <main class="container">
+
+        <div>
             <h1>Trámites</h1>
             <div id="container-tramites" class="container"></div>
 
         </div>
-        <div class="sitios-importantes container">
+        <div>
             <h1>Sitios importantes</h1>
             <div id="container-sitios" class="container"></div>
 
@@ -74,8 +72,8 @@
 
     </main>
     <footer>
-        <section class="container">
-<!--             <section class='footer-top'>
+        <section>
+<!--        <section class='footer-top'>
                 <img class="logo" src="" title='Logo' alt='Logo' />
 
             </section> -->

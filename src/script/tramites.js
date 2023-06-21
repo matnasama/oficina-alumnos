@@ -4,6 +4,7 @@ const containerTramites = document.getElementById('container-tramites');
 const sitiosImp ='../src/data/sitiosimportantes.json';
 const containerSitios = document.getElementById('container-sitios');
 
+
 let tramitesAlumnos = [];
 
 class Tramite {
@@ -25,9 +26,9 @@ function cargarEventosTramites() {
         renderizarTramites();
         cargarTramiteLocalStorage();
     });
-
-
+   
 }
+
 function cargarTramiteLocalStorage() {
     tramitesAlumnos = JSON.parse(localStorage.getItem('tramitesLS')) || [];
 }
@@ -59,14 +60,26 @@ async function renderizarTramites() {
 
 function recorrerArrayTramites(arregloTramites) {
     arregloTramites.forEach((tramite) => {
-        const divCardTramites = document.createElement('div');
-        divCardTramites.classList.add('card', 'row');
-        divCardTramites.innerHTML += `
-        <h4>${tramite.nombre}</h4>
-        <p>$${tramite.descripcion}</p>
-        <a id=${tramite.direccion} class="boton" href="#">Agregar</a>
+        const divCardTramites = document.createElement('div',);
+        const divCardTramitesFigure = document.createElement('div');
+        divCardTramites.classList.add('flip-container');
+        divCardTramitesFigure.classList.add('card')
+        divCardTramitesFigure.innerHTML += `
+            <div class="front">
+                <div class="content">
+                    <h4>${tramite.nombre}</h4>
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    <p>${tramite.descripcion}</p>
+                    <a id=${tramite.direccion} class="boton" href=${tramite.url} target="_blank">Ver</a>
+                </div>
+            </div>
+
     `;
         containerTramites.appendChild(divCardTramites);
+        divCardTramites.appendChild(divCardTramitesFigure)
     });
 }
 
@@ -136,7 +149,7 @@ function recorrerArraySitios(arregloSitios) {
         divCardSitios.classList.add('card-sitios');
         divCardSitios.innerHTML += `
 			<img src="./img/${sitio.img}" alt="${sitio.nombre}" />
-			<a id=${sitio.id} class="boton" href="#">Ir al sitio</a>
+			<a id=${sitio.id} class="boton" href="${sitio.url}" target="_blank">Ir al sitio</a>
 
         `;
         containerSitios.appendChild(divCardSitios);
@@ -153,6 +166,3 @@ function limpiarContenedorSitiosImportantes() {
 function eliminarSitiosLS() {
     localStorage.removeItem('tramiteLS');
 }
-
-
-

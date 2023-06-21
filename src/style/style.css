@@ -18,11 +18,9 @@ body {
 }
 
 h1 {
-    margin-left: 5%;
+    text-align: center;
     font-family: inherit;
 }
-
-
 .container {
     width: 100%;
     max-width: 1200px;
@@ -33,52 +31,61 @@ h1 {
     margin: auto;
 }
 
-.container .card {
-    width: 200px;
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
+.flip-container {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; 
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
     text-align: center;
-    transition: all 0.25s;
-    background-color: #6c6791;
-}
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border: none !important;
+  }
+  .flip-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    backface-visibility: hidden;
+    color: #fff;
+    padding: 20px;
+    background-color: #0A2447;
+    border-radius: 20px;
+    border: solid 3px #0A2223;
 
-.container .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
 
-
-
-.container .card  h4 {
-    font-weight: 600;
-    margin: 8px auto;
-}
-
-.container .card p {
-    padding: 0 1rem;
+  }
+  .front {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: rotateY(0deg);
+  }
+  .back {
     font-size: 16px;
-    font-weight: 300;
-    margin: 8px auto;
-}
+    transform: rotateY(180deg);
+  }
 
-.container .card .boton {
-    font-weight: 500;
+  .flip-container .boton {
     text-decoration: none;
     color: white;
     background-color: #384D9F;
     padding: 10px 22px;
     text-align: center;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    width: 190px;
     place-self: center;
     margin-top: 10px;
 }
@@ -226,3 +233,4 @@ h2 {
     font-size: 40px;
     text-align: center;
 }
+

@@ -2,43 +2,37 @@
 	{
 		"id": 8,
 		"nombre": "Gestión Online",
-		"descripcion": 10000,
 		"img": "guarani.jpg",
-        "url": "url"
+        "url": "http://gestiononline.unm.edu.ar/unm3w/"
 	},
 	{
 		"id": 9,
 		"nombre": "Bedelía",
-		"descripcion": 8500,
 		"img": "bedelia.jpg",
-        "url": "url"
+        "url": "http://campusvirtual.unm.edu.ar/moodle/course/view.php?id=5869"
 	},
 	{
 		"id": 10,
 		"nombre": "Bienestar Universitario",
-		"descripcion": 8400,
 		"img": "bienestar.jpg",
-        "url": "url"
+        "url": "http://www.unm.edu.ar/index.php/estudiantes/bienestar-universitario"
 	},
 	{
 		"id": 11,
 		"nombre": "Calendario Académico",
-		"descripcion": 9130,
 		"img": "calendario.jpg",
-        "url": "url"
+        "url": "http://www.unm.edu.ar/images/Calendario_academico/Calendario_Acadmico_2022_UNM_Dic_2021.pdf"
 	},
 	{
 		"id": 12,
 		"nombre": "Laboratorios de Informática",
-		"descripcion": 9190,
 		"img": "labinfo.jpg",
-        "url": "url"
+        "url": "http://campusvirtual.unm.edu.ar/moodle/mod/scheduler/view.php?id=91809"
 	},
 	{
 		"id": 13,
-		"nombre": "Mesas de Examen",
-		"descripcion": 7490,
-		"img": "mesaexamen.jpg",
-        "url": "url"
+		"nombre": "Biblioteca",
+		"img": "biblioteca.jpg",
+        "url": "http://biblioteca.unm.edu.ar/cgi-bin/koha/opac-main.pl"
 	}
 ]

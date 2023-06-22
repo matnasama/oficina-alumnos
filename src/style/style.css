@@ -17,16 +17,17 @@ body {
     box-sizing: inherit;
 }
 
+.accordion-body {
+    background-color: #f3feff;
+}
 
 .tramites {
-    background-color: #f2f4fc;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 }
 
 .sitios-importantes {
-    background-color: #f2f4fc;
     margin: 20px;
     padding: 20px;
 }
@@ -240,6 +241,10 @@ h1 {
     font-size: 16px;
     box-shadow: 2px 2px 30px rgb(46, 46, 97);
     padding: 10px;
+}
+
+.col-12 {
+    margin-bottom: 20px;
 }
 
 footer {

@@ -67,7 +67,7 @@ function recorrerArrayTramites(arregloTramites) {
         divCardTramitesFigure.innerHTML += `
             <div class="front">
                 <div class="content">
-                    <h4>${tramite.nombre}</h4>
+                    <h1 class="display-6">${tramite.nombre}</h1>
                 </div>
             </div>
             <div class="back">
@@ -166,3 +166,10 @@ function limpiarContenedorSitiosImportantes() {
 function eliminarSitiosLS() {
     localStorage.removeItem('tramiteLS');
 }
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

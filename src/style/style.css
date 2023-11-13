@@ -17,6 +17,19 @@ body {
     box-sizing: inherit;
 }
 
+.container-fluid {
+    background-color: #0A2447;
+}
+
+.navbar-brand {
+    background-color: white;
+    border-radius: 8px;
+    border-style: double;
+    padding: 10px;
+    object-fit: contain;
+
+}
+
 .accordion-body {
     background-color: #f3feff;
 }
@@ -230,11 +243,6 @@ h1 {
     align-items: center;
 }
 
-.navbar-brand {
-    object-fit: contain;
-
-
-}
 
 .acerca-de {
     color: rgb(182, 181, 181);
@@ -339,4 +347,8 @@ h2 {
 
 .dhycs {
     color: #D32A17;
+}
+
+.nav-link {
+    color: white;
 }
